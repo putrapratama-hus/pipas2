@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cafe Daong - Hutan Pinus Bogor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="halam.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logokopi.jpg" alt="Cafe Daong Logo">
+      ngopiYuk!
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#tentang">Tentang</a>
+      <a href="#menu">Menu</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Kontak</a>
+      <a href="https://wa.me/6281234567890?text=Halo%20Cafe%20Daong%2C%20saya%20ingin%20reservasi." target="_blank" class="order-button">Reservasi</a>
+    </div>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-content">
+      <h1>Nikmati Kopi Premium di Tengah Hutan Pinus</h1>
+      <p>Rasakan sensasi ngopi berbeda dengan pemandangan alam yang menyejukkan di Cafe Daong Bogor</p>
+      <a href="#menu" class="header-button">Lihat Menu Kami</a>
+    </div>
+    <div class="scroll-down" onclick="document.querySelector('#tentang').scrollIntoView({ behavior: 'smooth' })">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </header>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Cafe Daong berada di tengah hutan pinus Bogor. Dengan kopi lokal terbaik dan suasana alam, kami menghadirkan pengalaman ngopi yang tak terlupakan untuk semua kalangan. Nikmati racikan kopi spesial kami sambil menikmati udara segar dan pemandangan hutan pinus yang menyejukkan.</p>
+    <a href="#menu" class="cta-button">Lihat Menu Lengkap</a>
+  </section>
+
+  <section id="menu">
+    <h2>Menu Kami</h2>
+    <p>Nikmati berbagai pilihan minuman dan makanan berkualitas tinggi dengan bahan-bahan pilihan terbaik.</p>
+    
+    <div class="menu-tabs">
+      <div class="menu-tab active" data-category="kopi">COFFEE DRINK</div>
+      <div class="menu-tab" data-category="es">ES FAVORIT</div>
+      <div class="menu-tab" data-category="makanan">MAKANAN</div>
+      <div class="menu-tab" data-category="snack">SNACK & DESSERT</div>
+    </div>
+    
+    <!-- Coffee Menu -->
+    <div class="menu-category active" id="kopi">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="kopi2.png" alt="ES Kopi LANGIT">
+          <div class="menu-content">
+            <h3>ES Kopi LANGIT</h3>
+            <p>Rasa kopi murni yang kuat dengan crema tebal, dibuat dari biji kopi pilihan.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="ES Kopi LANGIT" data-price="38000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="kopi 1.png" alt="Es Kopi BUMI">
+          <div class="menu-content">
+            <h3>ES Kopi BUMI</h3>
+            <p>Perpaduan espresso dengan susu steamed yang lembut dan lapisan foam yang creamy.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="Es Kopi BUMI" data-price="38000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="es1.png" alt="ES kopi PINUS">
+          <div class="menu-content">
+            <h3>ES kopi PINUS</h3>
+            <p>Espresso dengan perbandingan susu dan foam yang seimbang, taburan bubuk kayu manis.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="ES kopi PINUS" data-price="30000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="kopi3.png" alt="BUTTERSCOTCH LATTE">
+          <div class="menu-content">
+            <h3>BUTTERSCOTCH LATTE</h3>
+            <p>Kopi single origin diseduh manual untuk mengekstrak rasa kompleks dan aroma yang khas.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="BUTTERSCOTCH LATTE" data-price="35000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="es2.png" alt="BUTTERSCOTCH LATTE">
+          <div class="menu-content">
+            <h3>CARAMEL MACHIATO</h3>
+            <p>kopi dengan rasa manis karamel yang lembut dan creamy dengan rasa yang sangat enak.</p>
+            <span class="price">Rp 45.000</span>
+            <button class="order-btn" data-item="CARAMEL MACHIATO" data-price="45000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="kopi4.png" alt="MANUAL BREW">
+          <div class="menu-content">
+            <h3>MANUAL BREW</h3>
+            <p>Kopi yang diseduh dengan metode manual untuk menghasilkan cita rasa yang lebih kaya.</p>
+            <span class="price">Rp 40.000</span>
+            <button class="order-btn" data-item="MANUAL BREW" data-price="40000">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Iced Drinks Menu -->
+    <div class="menu-category" id="es">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="es3.png" alt="TARO LATTE">
+          <div class="menu-content">
+            <h3>TARO LATTE</h3>
+            <p>Minuman berbasis taro yang creamy dan manis, disajikan dengan susu dan es batu.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="TARO LATTE" data-price="38000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="es7.png" alt="GREEN TEA LATTE">
+          <div class="menu-content">
+            <h3>GREEN TEA LATTE</h3>
+            <p>Minuman berbasis teh hijau yang creamy dan manis, disajikan dengan susu dan es batu.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="GREEN TEA LATTE" data-price="38000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="es4.png" alt="LYCHEE TEA">
+          <div class="menu-content">
+            <h3>LYCHEE TEA</h3>
+            <p>Minuman dengan rasa buah Leci yang segar dan manis yang sangat enak dan menyejukkan.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="LYCHEE TEA" data-price="38000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="es5.png" alt="AURORA SNOW">
+          <div class="menu-content">
+            <h3>AURORA SNOW</h3>
+            <p>Minuman berbasis susu dengan rasa vanila yang lembut.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="AURORA SNOW" data-price="40000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="es6.png" alt="APPLE BLACK">
+          <div class="menu-content">
+            <h3>APPLE BLACK</h3>
+            <p>Teh hitam dengan rasa apel yang segar dan manis.</p>
+            <span class="price">Rp 35.000</span>
+            <button class="order-btn" data-item="APPLE BLACK" data-price="35000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="es8.png" alt="PUNCH FRESH TEA">
+          <div class="menu-content">
+            <h3>PUNCH FRESH TEA</h3>
+            <p>Teh segar dengan campuran buah-buahan tropis yang menyegarkan.</p>
+            <span class="price">Rp 38.000</span>
+            <button class="order-btn" data-item="PUNCH FRESH TEA" data-price="38000">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Food Menu -->
+    <div class="menu-category" id="makanan">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="m1.png" alt="Nasi Campur Khas BALI">
+          <div class="menu-content">
+            <h3>Nasi Campur Khas BALI</h3>
+            <p>Nasi dengan campuran sate lilit,urap sayur, ayam bali teri dan kacang dipadukan dengan sambal matah.</p>
+            <span class="price">Rp 70.000</span>
+            <button class="order-btn" data-item="Nasi Campur Khas BALI" data-price="70000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="m2.png" alt="Ayam Bakar Betutu">
+          <div class="menu-content">
+            <h3>Ayam Bakar Betutu</h3>
+            <p>Ayam yang dibumbui dengan rempah khas Bali, dibakar hingga sempurna dengan citarasa yang enak.</p>
+            <span class="price">Rp 58.000</span>
+            <button class="order-btn" data-item="Ayam Bakar Betutu" data-price="58000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="m3.png" alt="Ayam Penyet">
+          <div class="menu-content">
+            <h3>Ayam Penyet</h3>
+            <p>Ayam goreng yang disajikan dengan sambal , lalapan, perasan limau , dan nasi putih.</p>
+            <span class="price">Rp 58.000</span>
+            <button class="order-btn" data-item="Ayam Penyet" data-price="58000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="m4.png" alt="IGA BAKAR Sambal Ijo">
+          <div class="menu-content">
+            <h3>IGA BAKAR Sambal Ijo</h3>
+            <p>IGA BAKAR dengan sambal ijo yang pedas dan nikmat.</p>
+            <span class="price">Rp 88.000</span>
+            <button class="order-btn" data-item="IGA BAKAR Sambal Ijo" data-price="88000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="m5.png" alt="Sate Ayam">
+          <div class="menu-content">
+            <h3>Sate Ayam</h3>
+            <p>Potongan daging ayam yang dibumbui dan ditusuk, kemudian dibakar hingga matang.</p>
+            <span class="price">Rp 58.000</span>
+            <button class="order-btn" data-item="Sate Ayam" data-price="58000">Pesan Sekarang</button>
+          </div>
+        </div>
+         <div class="menu-item">
+          <img src="m6.png" alt="FISH CURRY">
+          <div class="menu-content">
+            <h3>FISH CURRY</h3>
+            <p>Ikan kakap putih yang dimasak dengan teknik pan seared dan diberikan saus asian style curry.</p>
+            <span class="price">Rp 44.000</span>
+            <button class="order-btn" data-item="FISH CURRY" data-price="58000">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <div class="menu-category" id="snack">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="dessert1.png" alt="CHOCO MOUSSE">
+          <div class="menu-content">
+            <h3>Dessert : CHOCO MOUSSE</h3>
+            <p>HIdangan manis dengan perpaduan krim cokelat dan biskuit yang crunchy yang lembut.</p>
+            <span class="price">Rp 40.000</span>
+            <button class="order-btn" data-item="CHOCO MOUSSE" data-price="40000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="dessert2.png" alt="Salad Segar">
+          <div class="menu-content">
+            <h3>Dessert : REGAL CREAM CHEESE</h3>
+            <p>Hidangan manis dengan perpaduan krim keju dan biskuit dan selai stroberi dengan rasa yang sangat enak.</p>
+            <span class="price">Rp 40.000</span>
+            <button class="order-btn" data-item="REGAL CREAM CHEESE" data-price="40000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="snack1.png" alt="Sandwich Ice Cream">
+          <div class="menu-content">
+            <h3>Sandwich Ice Cream</h3>
+            <p>Roti lapis dengan es krim vanila, roti yang lembut dan dilengkapi dengan saus caramel yang manis dan penuh dengan rasa manis dan bikin ketagihan.</p>
+            <span class="price">Rp 25.000</span>
+            <button class="order-btn" data-item="Sandwich Ice Cream" data-price="25000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="snack2.png" alt="MEATY Fries">
+          <div class="menu-content">
+            <h3>MEATY Fries</h3>
+            <p>Kentang goreng dengan topping daging sapi cincang, keju, dan saus spesial dengan rasa yang menggugah selera,lezat dan sangat enak untuk dinikmati.</p>
+            <span class="price">Rp 45.000</span>
+            <button class="order-btn" data-item="MEATY Fries" data-price="45000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="snack3.png" alt="FRIED FRUIT">
+          <div class="menu-content">
+            <h3>FRIED FRUIT</h3>
+            <p>Buah strawberry yang digoreng dengan balutan tepung renyah yang crispy dan buah yang manis.</p>
+            <span class="price">Rp 40.000</span>
+            <button class="order-btn" data-item="FRIED FRUIT" data-price="40000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="snack4.png" alt="STRAWBERRY Toast">
+          <div class="menu-content">
+            <h3>STRAWBERRY Toast</h3>
+            <p>Roti panggang dengan stroberi yang segar dan dipotong potong dan dengan saus cream yang lezat.</p>
+            <span class="price">Rp 42.000</span>
+            <button class="order-btn" data-item="STRAWBERRY Toast" data-price="42000">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="snack5.png" alt="CHICKEN SCHNITZEL">
+          <div class="menu-content">
+            <h3>CHICKEN SCHNITZEL</h3>
+            <p>Ayam fillet yang digoreng dengan tepung panir, disajikan dengan kentang goreng dan saus spesial.</p>
+            <span class="price">Rp 60.000</span>
+            <button class="order-btn" data-item="CHICKEN SCHNITZEL" data-price="60000">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section id="galeri">
+    <h2>Galeri Kami</h2>
+    <p>Lihat suasana dan menu favorit di Cafe Daong melalui galeri foto kami</p>
+    
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="Piknikdong_com - Media asik untuk sebuah pengalaman menarik!.jpeg" alt="Suasana Cafe">
+          <div class="gallery-caption">Suasana Nyaman di Cafe Daong</div>
+        </div>
+        <div class="gallery-item">
+          <img src="kopidaong.jpg" alt="Minuman Spesial">
+          <div class="gallery-caption">Minuman Spesial Signature</div>
+        </div>
+        <div class="gallery-item">
+          <img src="Tempat ngopi tengah hutan paling ngehits di Bogor Kopi Daong.jpg" alt="cafe daong">
+          <div class="gallery-caption">cafe daong</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=600&q=80" alt="Spot Foto">
+          <div class="gallery-caption">Spot Foto Instagramable</div>
+        </div>
+        <div class="gallery-item">
+          <img src="Kopi Daong Nasi Goreng Cabe Hijau.jpg" alt="Makanan Spesial">
+          <div class="gallery-caption">Makanan Spesial</div>
+        </div>
+        <div class="gallery-item">
+          <img src="cafe daong - bogor, jawa barat.jpeg" alt="Pemandangan">
+          <div class="gallery-caption">Pemandangan Hutan Pinus</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimoni">
+    <h2>Apa Kata Mereka</h2>
+    <p>Testimoni dari pelanggan yang sudah merasakan pengalaman di Cafe Daong</p>
+    
+    <div class="testimonials" id="testimonials">
+      <div class="testimonial">
+        <div class="testimonial-rating">★★★★★</div>
+        <p>"Suasana alamnya bikin betah, dan kopinya juara! Saya suka banget dengan Cold Brew mereka yang segar dan tidak terlalu pahit."</p>
+        <h3>- iman sulaeman.</h3>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-rating">★★★★★</div>
+        <p>"Pelayanan ramah, kopi segar, pasti balik lagi! Cappuccino Daong-nya wajib dicoba dengan pemandangan hutan pinus yang menyejukkan."</p>
+        <h3>- abdul rasyid.</h3>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-rating">★★★★★</div>
+        <p>"Bintang 5 di Google nggak bohong. Wajib coba! Avocado toast-nya juara, pas banget dinikmati sambil menikmati udara pagi."</p>
+        <h3>- Komentar Google</h3>
+      </div>
+    </div>
+    <div class="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>Kami siap melayani Anda setiap hari dengan senang hati</p>
+    
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Lokasi</h3>
+        <p>📍 <a href="https://goo.gl/maps/zRMLnWvCGjDNZhKx9" target="_blank">Jl. Hutan Pinus, Bogor (Lihat di Google Maps)</a></p>
+        <p>🕗 Buka setiap hari 08:00 - 22:00 WIB</p>
+      </div>
+      <div class="footer-section">
+        <h3>Kontak</h3>
+        <p>📞 +62 856-1870-323</p>
+        <p>📧 info@cafedaong.com</p>
+        <div class="social-links">
+          <a href="https://instagram.com/cafedaong" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/cafedaong" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://tiktok.com/@cafedaong" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Reservasi</h3>
+        <p>Untuk reservasi kelompok besar atau acara khusus, silahkan hubungi kami melalui WhatsApp atau email.</p>
+                <a href="https://wa.me/6281234567890?text=Halo%20Cafe%20Daong%2C%20saya%20ingin%20reservasi" class="cta-button">Reservasi via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Cafe Daong</h3>
+        <p> kopi premium di tengah hutan pinus Bogor. Menyajikan pengalaman ngopi berbeda dengan kualitas terbaik.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Menu Populer</h3>
+        <a href="#menu">ES KOPI BUMI</a>
+        <a href="#menu">FRIED FRUIT</a>
+        <a href="#menu">AYAM PENYET</a>
+        <a href="#menu">AURORA SNOW</a>
+      </div>
+      <div class="footer-section">
+        <h3>Link Cepat</h3>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Cafe Daong Bogor. ngopiYUK!.</p>
+    </div>
+  </footer>
+
+  <!-- Order Modal -->
+  <div class="modal" id="orderModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Pesan <span id="modalItemName"></span></h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <form class="order-form" id="orderForm">
+        <input type="hidden" id="itemName" name="itemName">
+        <input type="hidden" id="itemPrice" name="itemPrice">
+        <div>
+          <label for="name">Nama Lengkap</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="phone">Nomor WhatsApp</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+          <label for="quantity">Jumlah Pesanan</label>
+          <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6+</option>
+          </select>
+        </div>
+        <div>
+          <label for="notes">Catatan Tambahan</label>
+          <textarea id="notes" name="notes" placeholder="Contoh: Kurangi gula, tambah es, dll."></textarea>
+        </div>
+        <button type="submit" class="submit-order">Kirim Pesanan</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Menu tabs functionality
+    const menuTabs = document.querySelectorAll('.menu-tab');
+    menuTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        menuTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Hide all menu categories
+        document.querySelectorAll('.menu-category').forEach(cat => {
+          cat.classList.remove('active');
+        });
+        // Show selected category
+        const categoryId = tab.getAttribute('data-category');
+        document.getElementById(categoryId).classList.add('active');
+      });
+    });
+
+    // Testimonial slider
+    const testimonials = document.getElementById('testimonials');
+    const dots = document.querySelectorAll('.dot');
+    let currentTestimonial = 0;
+    
+    function showTestimonial(index) {
+      testimonials.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+      currentTestimonial = index;
+    }
+    
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        showTestimonial(parseInt(dot.getAttribute('data-index')));
+      });
+    });
+    
+    // Auto slide testimonials
+    setInterval(() => {
+      currentTestimonial = (currentTestimonial + 1) % dots.length;
+      showTestimonial(currentTestimonial);
+    }, 5000);
+
+    // Order modal functionality
+    const orderButtons = document.querySelectorAll('.order-btn');
+    const orderModal = document.getElementById('orderModal');
+    const modalItemName = document.getElementById('modalItemName');
+    const itemNameInput = document.getElementById('itemName');
+    const itemPriceInput = document.getElementById('itemPrice');
+    const closeModal = document.querySelector('.close-modal');
+    
+    orderButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const itemName = button.getAttribute('data-item');
+        const itemPrice = button.getAttribute('data-price');
+        
+        modalItemName.textContent = itemName;
+        itemNameInput.value = itemName;
+        itemPriceInput.value = itemPrice;
+        
+        orderModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    closeModal.addEventListener('click', () => {
+      orderModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    });
+    
+    window.addEventListener('click', (e) => {
+      if (e.target === orderModal) {
+        orderModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+    
+    // Form submission
+    const orderForm = document.getElementById('orderForm');
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const itemName = document.getElementById('itemName').value;
+      const itemPrice = document.getElementById('itemPrice').value;
+      const quantity = document.getElementById('quantity').value;
+      const notes = document.getElementById('notes').value;
+      
+      const totalPrice = parseInt(itemPrice) * parseInt(quantity);
+      
+      const message = `Halo Cafe Daong, saya ingin memesan:
+      
+Produk: ${itemName}
+Jumlah: ${quantity}
+Total: Rp ${totalPrice.toLocaleString('id-ID')}
+Catatan: ${notes || '-'}
+
+Atas nama: ${name}
+No. HP: ${phone}`;
+      
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/6281234567890?text=${encodedMessage}`, '_blank');
+      
+      orderModal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+      orderForm.reset();
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        navLinks.classList.remove('active');
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
